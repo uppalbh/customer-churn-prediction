@@ -2,29 +2,25 @@
 
 ## Overview
 
-Customer churn is one of the most significant challenges faced by subscription-based businesses. Acquiring new customers is considerably more expensive than retaining existing ones, making churn prediction a critical business problem.
+Customer churn is one of the most significant challenges faced by subscription-based businesses. Acquiring new customers is more expensive than retaining existing ones, making churn prediction an important value addition for businesses.
 
 This project develops a machine learning pipeline to:
-
 * Predict whether a customer is likely to churn.
-* Identify the most important factors driving churn.
+* Identify the most important factors leading to churn.
 * Estimate the revenue at risk from potentially churning customers.
-* Compare multiple machine learning models to determine the best-performing solution.
+* Compare multiple machine learning models to determine the best-performing model.
 
----
 
 ## Business Problem
 
-Telecommunication companies lose substantial revenue when customers discontinue their services. Early identification of at-risk customers enables targeted retention strategies and reduces revenue loss.
+Subscription-based companies lose substantial revenue when customers stop using their services, end their subscriptions, or churn out. Early identification of at-risk customers enables targeted retention strategies leading to reduced potential revenue loss.
 
 ### Objectives
-
 * Predict customer churn before it occurs.
-* Understand key drivers behind customer attrition.
-* Quantify financial exposure through revenue-at-risk estimation.
-* Enable targeted retention campaigns for high-value customers.
+* Understand key factors behind customer churn.
+* Quantify potential loses through revenue at risk estimation.
+* Enable targeted retention strategies for high-value customers.
 
----
 
 ## Dataset
 
@@ -57,12 +53,9 @@ The project uses the **Telco Customer Churn Dataset**, which contains customer d
 
 ### Target Variable
 
-| Variable | Description           |
-| -------- | --------------------- |
-| Churn    | 0 = Customer Retained |
-| Churn    | 1 = Customer Churned  |
+* Churn 0 = Customer Retained
+* Churn 1 = Customer Churned
 
----
 
 ## Project Structure
 
@@ -95,7 +88,7 @@ customer-churn-prediction/
 └── .gitignore
 ```
 
----
+
 
 ## Data Preprocessing
 
@@ -121,7 +114,7 @@ Categorical features were converted into numerical representations using:
 
 All encoders were saved using Pickle for future inference and deployment.
 
----
+
 
 ## Handling Class Imbalance
 
@@ -134,7 +127,7 @@ To address this issue:
 * Balanced the target classes.
 * Improved model learning for minority-class predictions.
 
----
+
 
 ## Machine Learning Models Evaluated
 
@@ -164,7 +157,7 @@ Three classification models were evaluated using **5-Fold Cross Validation**.
 * Handles complex feature interactions.
 * Widely used in industry competitions and production systems.
 
----
+
 
 ## Model Selection
 
@@ -177,20 +170,20 @@ Cross-validation was used to compare model performance.
 
 After comparison, **XGBoost** achieved the best overall performance and was selected as the final model.
 
----
+
 
 ## Results
 
 ### XGBoost Performance
 
 | Metric              | Score  |
-| ------------------- | ------ |
+|       - |    |
 | Validation Accuracy | 77.71% |
 | Test Accuracy       | 77.36% |
 
 The final XGBoost model was trained on the complete SMOTE-balanced training dataset and saved for future deployment.
 
----
+
 
 ## Feature Importance Analysis
 
@@ -207,7 +200,7 @@ The XGBoost model identified the most influential factors contributing to custom
 
 These insights help businesses understand customer behavior and design more effective retention strategies.
 
----
+
 
 ## Revenue-at-Risk Framework
 
@@ -225,12 +218,12 @@ This metric estimates the expected monthly revenue loss associated with each cus
 ### Example
 
 | Monthly Charge | Churn Probability | Revenue at Risk |
-| -------------- | ----------------- | --------------- |
+|     -- |      -- |       |
 | $100           | 90%               | $90             |
 
 This enables businesses to prioritize customers based on both churn likelihood and financial impact.
 
----
+
 
 ## Key Business Insights
 
@@ -240,7 +233,7 @@ This enables businesses to prioritize customers based on both churn likelihood a
 * Revenue-at-risk ranking helps prioritize retention efforts efficiently.
 * Combining churn prediction with financial risk provides more actionable insights than churn prediction alone.
 
----
+
 
 ## Visualizations
 
@@ -270,7 +263,7 @@ The project includes multiple visual analyses to improve interpretability.
 * High-Risk Customer Identification
 * Revenue Exposure Analysis
 
----
+
 
 ## Technologies Used
 
@@ -298,7 +291,7 @@ The project includes multiple visual analyses to improve interpretability.
 
 * Pickle
 
----
+
 
 ## Installation
 
@@ -316,7 +309,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
----
+ 
 
 ## Running the Project
 
@@ -332,7 +325,7 @@ Or execute the training pipeline:
 python src/train.py
 ```
 
----
+ 
 
 ## Future Improvements
 
@@ -346,7 +339,7 @@ Potential enhancements include:
 * Interactive business intelligence dashboard.
 * Automated customer retention recommendation system.
 
----
+ 
 
 ## Conclusion
 
