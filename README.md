@@ -176,10 +176,8 @@ After comparison, **XGBoost** achieved the best overall performance and was sele
 
 ### XGBoost Performance
 
-| Metric              | Score  |
-|       - |    |
-| Validation Accuracy | 77.71% |
-| Test Accuracy       | 77.36% |
+* Validation Accuracy: 77.71%
+* Test Accuracy: 77.36% 
 
 The final XGBoost model was trained on the complete SMOTE-balanced training dataset and saved for future deployment.
 
@@ -217,9 +215,9 @@ This metric estimates the expected monthly revenue loss associated with each cus
 
 ### Example
 
-| Monthly Charge | Churn Probability | Revenue at Risk |
-|     -- |      -- |       |
-| $100           | 90%               | $90             |
+* Monthly Charge: $100
+* Churn Probability: 90%
+* Revenue at Risk: $90
 
 This enables businesses to prioritize customers based on both churn likelihood and financial impact.
 
