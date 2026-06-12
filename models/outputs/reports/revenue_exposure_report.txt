@@ -1,0 +1,15 @@
+
+Revenue Exposure Analysis
+=========================
+
+Total Revenue At Risk:
+$38,998.08
+
+Average Revenue At Risk:
+$27.68
+
+Top 5 Customers Risk:
+$459.94
+
+Top 15 Customers Risk:
+$1,332.41
